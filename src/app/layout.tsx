@@ -16,14 +16,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-gradient-to-b from-white to-slate-50 text-slate-900">
+      <body className="min-h-screen bg-linear-to-b from-white to-slate-50 text-slate-900">
         <div className="min-h-screen flex flex-col">
           <CartProvider>
             <header className="border-b border-slate-200 bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between gap-4">
                 <a
                   href="/"
-                  className="text-2xl font-bold tracking-tight bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hover:from-blue-700 hover:to-purple-700 transition-all"
+                  className="text-2xl font-bold tracking-tight bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hover:from-blue-700 hover:to-purple-700 transition-all"
                 >
                   🛍️ Marketplace
                 </a>
@@ -50,7 +50,7 @@ export default function RootLayout({
                     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
                   </a>
                   <a
-                    href="/dashboard/store"
+                    href="/dashboard"
                     className="text-slate-700 hover:text-blue-600 transition-colors relative group"
                   >
                     Dashboard
