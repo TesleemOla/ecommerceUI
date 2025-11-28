@@ -4,12 +4,12 @@ export default function HomePage() {
   return (
     <div className="space-y-12">
       {/* Hero Section */}
-      <section className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 p-8 md:p-12 text-white">
+      <section className="relative overflow-hidden rounded-2xl bg-linear-to-br from-blue-600 via-purple-600 to-pink-600 p-8 md:p-12 text-white">
         <div className="relative z-10 max-w-3xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-tight">
             Welcome to Your
             <br />
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 to-pink-200">
+            <span className="bg-clip-text text-transparent bg-linear-to-r from-yellow-200 to-pink-200">
               Multi-Store Marketplace
             </span>
           </h1>

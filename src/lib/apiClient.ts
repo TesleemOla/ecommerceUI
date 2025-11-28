@@ -33,20 +33,18 @@ export async function apiFetch<T>(
     let message = 'Unexpected error';
     let details: unknown;
     try {
-      const data = await res.json();
-      message = data.message ?? message;
-      details = data.message ?? data.errors ?? data;
+      const text = await res.text();
+        try {
+          const data = JSON.parse(text);
+          message = data.message ?? message;
+          details = data.message ?? data.errors ?? data;
+        } catch (jsonError) {
+          details = text;
+        }
     } catch {
       // ignore
     }
-    const error: Error & { details?: unknown } = new Error(message);
-    if (details !== undefined) {
-      error.details = details;
-    }
-    throw error;
-  }
+}
 
   return res.json();
 }
-
-

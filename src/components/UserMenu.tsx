@@ -54,7 +54,7 @@ export function UserMenu() {
 
   return (
     <div className="flex items-center gap-3">
-      <div className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-lg bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200">
+      <div className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-lg bg-linear-to-r from-blue-50 to-purple-50 border border-blue-200">
         <span className="text-xs font-semibold text-blue-700">{label}</span>
       </div>
       <button
